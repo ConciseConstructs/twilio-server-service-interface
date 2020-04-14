@@ -1,11 +1,11 @@
 import {  IRequest, IResponse, } from './LambdaClass.interface'
 
-export interface ITwilioSubaccountCreateRequest extends IRequest {
+export interface ITwilioSubaccountCloseRequest extends IRequest {
   accountSid:string
   authToken:string
 }
 
-export interface ITwilioSubaccountCreateResponse extends IResponse {
+export interface ITwilioSubaccountCloseResponse extends IResponse {
   thirdParty: {
     twilio: { // * (Documentation) https://www.twilio.com/docs/usage/api/subaccounts?code-sample=code-create-a-subaccount&code-language=Node.js&code-sdk-version=3.x"auth_token": "auth_token",
       subaccount: {
